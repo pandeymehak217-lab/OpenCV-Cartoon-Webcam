@@ -38,18 +38,18 @@ Uncomment or add the following in your script:
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('cartoon_output.avi', fourcc, 20.0, (width, height))
 
-# Inside the loop, write frames
+
 out.write(cartoon_frame)
 
-# Release the writer at the end
+
 out.release()
 This saves the cartoonized webcam feed as cartoon_output.avi.
 🧠 About
 This project demonstrates computer vision techniques to process live video and apply cartoon effects. It’s a fun way to explore Python and OpenCV capabilities while learning real-time image processing.
 📂 Repository Structure
 OpenCV-Cartoon-Webcam/
-├─ cartoon.py        # Main script to process webcam feed
-├─ README.md         # Project documentation
+├─ cartoon.py       
+├─ README.md         
 📸 Preview
 ⚡ Tips
 Adjust smoothing and edge detection parameters in cartoon.py to customize the cartoon effect
